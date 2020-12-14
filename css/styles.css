@@ -1,0 +1,63 @@
+/***************************TAG selection******************************/
+body{
+  background-image:url(../images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: right 0 bottom -100px;
+  background-size: 100% auto;
+  background-color: hsl(229, 57%, 11%);
+
+  color:white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  min-height: 98vh;
+}
+/***************************CLASS selection******************************/
+.main{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+
+  height: 40%;
+  width: 60%;
+}
+.main > div{
+  background-color: hsl(228, 56%, 26%);
+}
+.logo{
+  padding:50px 180px 50px 50px;
+  border-radius: 15px;
+  border-top-right-radius: 136px;
+}
+.action{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.action > div{
+    background-color: hsl(229, 57%, 11%);
+    height: 72px;
+    width: 72px;
+    margin: auto 20px auto 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+}
+.storage{
+  align-self: flex-end;
+  width:650px;
+}
+.attribution{
+  position: relative;
+  top:330px;
+}
+/****************************ID selection*******************************/
+#fylo{
+  display: block;
+  margin-bottom: 40px;
+}
