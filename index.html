@@ -21,35 +21,55 @@
     }
   </style>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="main">
     <div class="logo">
-      <img id="fylo" src="images/logo.svg" alt="logo image" height="60" width="202.5">
+      <img id="fylo" src="images/logo.svg" alt="logo image">
       <div class="action">
         <div class="action-item">
-          <img src="images/icon-document.svg" alt="document icon" height="36" width="30">
+          <img src="images/icon-document.svg" alt="document icon">
         </div>
         <div class="action-item">
-          <img src="images/icon-folder.svg" alt="folder icon" height="30" width="36">
+          <img src="images/icon-folder.svg" alt="folder icon">
         </div>
         <div class="action-item">
-          <img src="images/icon-upload.svg" alt="upload icon" height="24" width="36">
+          <img src="images/icon-upload.svg" alt="upload icon">
         </div>
       </div>
     </div>
     <div class="storage">
-      <p>You’ve used 815 GB of your storage</p>
-      <div class="left">
-        <p>185 GB Left</p>
+      <p id="stats">You’ve used <span id="usage">815 GB</span> of your storage</p>
+      <div class="bar-container">
+        <div class="bar">
+          <div class="end">
+          </div>
+        </div>
       </div>
-      <p>0 GB</p>
-      <p>1000 GB</p>
+      <div class="limit-container">
+        <div class="limit">
+          <p>0 GB</p>
+        </div>
+        <div class="limit">
+          <p>1000 GB</p>
+        </div>
+      </div>
+      <div class="left">
+        <div class="left-storage">
+          <p>185</p>
+        </div>
+        <div class="unit">
+          GB Left
+        </div>
+      </div>
     </div>
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/sakumashirayuki">Shirayuki Sakuma</a>.
   </div>
 </body>
 

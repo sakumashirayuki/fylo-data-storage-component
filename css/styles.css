@@ -1,63 +1,171 @@
 /***************************TAG selection******************************/
-body{
-  background-image:url(../images/bg-desktop.png);
-  background-repeat: no-repeat;
-  background-position: right 0 bottom -100px;
-  background-size: 100% auto;
-  background-color: hsl(229, 57%, 11%);
-
-  color:white;
-
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
-  min-height: 98vh;
-}
-/***************************CLASS selection******************************/
-.main{
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-
-  height: 40%;
-  width: 60%;
-}
-.main > div{
-  background-color: hsl(228, 56%, 26%);
-}
-.logo{
-  padding:50px 180px 50px 50px;
-  border-radius: 15px;
-  border-top-right-radius: 136px;
-}
-.action{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.action > div{
+@media (min-width:1281px){
+  body{
+    background-image:url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom -100px;
+    background-size: 100% auto;
     background-color: hsl(229, 57%, 11%);
-    height: 72px;
-    width: 72px;
-    margin: auto 20px auto 0;
+
+    color:white;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:center;
     align-items: center;
+    min-height: 95vh;
+
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    color:hsl(243, 100%, 93%);
+    font-weight: 400;
+  }
+  /***************************CLASS selection******************************/
+  .main{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+    height: 40%;
+    width: 65%;
+  }
+  .main > div{
+    background-color: hsl(228, 56%, 26%);
+    box-shadow: 30px 30px 40px 0px rgba(0, 0, 0, 0.2);
+  }
+  .logo{
+    padding:40px 140px 40px 40px;
+    border-radius: 10px;
+    border-top-right-radius: 104px;
+  }
+  .action{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .action > div{
+      background-color: hsl(229, 57%, 11%);
+      height: 48px;
+      width: 48px;
+      margin: auto 15px auto 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 10px;
+  }
+  .storage{
+    padding: 40px;
+
+    align-self: flex-end;
+    width:550px;
 
     border-radius: 10px;
+  }
+  .bar-container{
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 9.5px;
+  }
+  .bar{
+    width:81.5%;
+    height:15px;
+    border-radius: 9.5px;
+    border: 2px solid hsl(229, 57%, 11%);
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .end{
+    width: 11px;
+    height: 11px;
+    background-color: white;
+    border-radius: 5.5px;
+
+    position: relative;
+    right: 2px;
+    bottom: 0.5px;
+  }
+  .limit-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .limit > p{
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .left{
+    position: absolute;
+
+    top:260px;
+    right:326px;
+    background-color: white;
+
+    padding: 12px 24px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+
+    color: hsl(229, 57%, 11%);
+    font-weight: 700;
+    font-size: 40px;
+
+    display: flex;
+    align-items: center;
+  }
+  .left-storage > p{
+    margin:0 10px 0 0;
+  }
+  .unit{
+    color:hsl(229, 7%, 55%);
+    font-size: 14px;
+  }
+  .left::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid white;
+    border-left: 20px solid transparent;
+
+    position: absolute;
+    top:71px;
+    right:0;
+  }
+  .attribution{
+    position: relative;
+    top:230px;
+  }
+  /****************************ID selection*******************************/
+  #fylo{
+    display: block;
+    margin-bottom: 40px;
+  }
+  #stats{
+    margin-top: 0;
+  }
+  #usage{
+    font-weight: 700;
+  }
 }
-.storage{
-  align-self: flex-end;
-  width:650px;
-}
-.attribution{
-  position: relative;
-  top:330px;
-}
-/****************************ID selection*******************************/
-#fylo{
-  display: block;
-  margin-bottom: 40px;
+@media (min-width:320px) {
+  body{
+    background-image:url(../images/bg-desktop.png);
+    background-size: auto 150%;
+    background-position: right -200px top 0;
+    background-color: hsl(229, 57%, 11%);
+
+    color:white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    min-height: 95vh;
+
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    color:hsl(243, 100%, 93%);
+    font-weight: 400;
+  }
 }
