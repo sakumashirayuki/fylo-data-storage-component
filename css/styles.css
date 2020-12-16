@@ -148,24 +148,141 @@
     font-weight: 700;
   }
 }
-@media (min-width:320px) {
+@media (max-width:375px) {
   body{
-    background-image:url(../images/bg-desktop.png);
-    background-size: auto 150%;
-    background-position: right -200px top 0;
+    background-image:url(../images/bg-mobile.png);
+    background-size: cover;
     background-color: hsl(229, 57%, 11%);
 
     color:white;
+
+    margin:0;
 
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    min-height: 95vh;
+    min-height: 100vh;
 
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
     color:hsl(243, 100%, 93%);
     font-weight: 400;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+
+    height: 60%;
+    width: 90%;
+  }
+  .main > div{
+    background-color: hsl(228, 56%, 26%);
+    box-shadow: 30px 30px 40px 0px rgba(0, 0, 0, 0.2);
+  }
+  .logo{
+    padding:40px 90px 40px 40px;
+    border-radius: 10px;
+    border-top-right-radius: 104px;
+
+    margin-bottom: 20px;
+  }
+  .action{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .action > div{
+      background-color: hsl(229, 57%, 11%);
+      height: 48px;
+      width: 48px;
+      margin: auto 15px auto 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 10px;
+  }
+  .storage{
+    width: 249px;
+
+    padding: 35px 35px 50px;
+    border-radius: 10px;
+  }
+  .bar-container{
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 9.5px;
+  }
+  .bar{
+    width:81.5%;
+    height:15px;
+    border-radius: 9.5px;
+    border: 2px solid hsl(229, 57%, 11%);
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .end{
+    width: 11px;
+    height: 11px;
+    background-color: white;
+    border-radius: 5.5px;
+
+    position: relative;
+    right: 2px;
+    bottom: 0.5px;
+  }
+  .limit-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .limit > p{
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .left{
+    position: absolute;
+
+    top:550px;
+    right:100px;
+    background-color: white;
+
+    padding: 12px 24px;
+    border-radius: 10px;
+
+    color: hsl(229, 57%, 11%);
+    font-weight: 700;
+    font-size: 40px;
+
+    display: flex;
+    align-items: center;
+  }
+  .left-storage > p{
+    margin:0 10px 0 0;
+  }
+  .unit{
+    color:hsl(229, 7%, 55%);
+    font-size: 14px;
+  }
+  .attribution{
+    position: relative;
+    top:150px;
+  }
+  /****************************ID selection*******************************/
+  #fylo{
+    display: block;
+    margin-bottom: 40px;
+  }
+  #stats{
+    margin-top: 0;
+    text-align: center;
+  }
+  #usage{
+    font-weight: 700;
   }
 }
