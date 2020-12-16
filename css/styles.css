@@ -148,7 +148,7 @@
     font-weight: 700;
   }
 }
-@media (max-width:375px) {
+@media (max-width:480px) {
   body{
     background-image:url(../images/bg-mobile.png);
     background-size: cover;
@@ -248,8 +248,8 @@
   .left{
     position: absolute;
 
-    top:550px;
-    right:100px;
+    top: 70%;
+    right:26.67%;
     background-color: white;
 
     padding: 12px 24px;
